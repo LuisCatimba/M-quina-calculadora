@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.conteinermaquina {
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.header {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+div.btns {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background-color: #534d4d;
+}
+
+.fila1 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fila1  div {
+    width: 52px;
+    height: 60px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-right: 5px;
+}
+
+.fila2 div {
+    width: 52px;
+    height: 60px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+
+.fila2 #igual {
+    height: 140px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+#color-red {
+    color: green;
+}
+
+@media screen and (max-width: 300px){
+
+    .conteinermaquina {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .fila1  div, .fila2 div {
+        width: 23%;
+        font-size: 1.3rem;
+    }
+
+    .fila2 #igual {
+       width: 30px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+
+    .conteinermaquina {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header {
+        height: 10%;
+    }
+
+    .header input {
+        height: 100%;
+    }
+
+    div.btns {
+        height: 80%;
+    }
+
+    .fila1 div {
+        height: 15%;
+    }
+
+    .fila2 div {
+        height: 25%
+    }
+
+    .fila2 #igual {
+        height: 120px;
+    }
+}
